@@ -121,10 +121,10 @@ export default function Home() {
                 <span>Monday - Sunday </span>
                 <span> 10:00 AM - 9:00 PM</span>
               </p>
-              <p className="openinghours d-flex">
+{/*               <p className="openinghours d-flex">
                 <span>Thursday</span>
                 <span>12:00 PM - 9:00 PM</span>
-              </p> 
+              </p>  */}
             </div>
             <div className="col-md-6 color-3 p-4 ">
               <h3 className="mb-2">Book an Appointment Online</h3>
