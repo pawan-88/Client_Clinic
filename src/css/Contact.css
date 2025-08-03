@@ -1,0 +1,142 @@
+.contact-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-hero {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  position: relative;
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 50, 0.4);
+  z-index: 0;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.contact-hero-content {
+  max-width: 700px;
+  color: white;
+}
+
+.contact-breadcrumbs {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-breadcrumbs a {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-hero-content h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.contact-main {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  font-size: 16px;
+}
+
+.contact-info-grid span {
+  font-weight: 600;
+  color: #0c0d0e;
+}
+
+.contact-info-grid a {
+  color: #044fc8;
+  text-decoration: none;
+}
+
+.contact-info-grid a:hover {
+  text-decoration: underline;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-form-box {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-box h3 {
+  font-size: 22px;
+  color: #2563eb;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form-box label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.contact-form-box input,
+.contact-form-box select,
+.contact-form-box textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.contact-form-box button {
+  margin-top: 20px;
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.contact-form-box button:hover {
+  background: #1e40af;
+}

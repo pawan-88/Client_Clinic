@@ -1,0 +1,47 @@
+/* Header.css */
+
+header {
+  background-color:  #60A5FA;;
+  color: rgb(7, 6, 6);
+}
+
+header .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: flex-end; /* Aligns nav to the right */
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1rem;
+}
+
+header nav a {
+  color: rgb(10, 9, 9);
+  text-decoration: none;
+  transition: opacity 0.2s ease, text-decoration 0.2s;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  header .container {
+    justify-content: center;
+  }
+
+  header nav {
+    gap: 1rem;
+    font-size: 0.875rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+

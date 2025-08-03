@@ -1,0 +1,534 @@
+/* src/css/Home.css */
+
+/* Font + Base */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Section */
+.ftco-intro {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  color: #fff;
+  padding: 4px 150px;
+  position: relative;
+  z-index: 1;
+  animation: fadeSlideUp 1.2s ease-out both;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ftco-intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.85;
+  z-index: -1;
+}
+
+/* Layout */
+.ftco-intro .container {
+  position: relative;
+  z-index: 2;
+}
+
+.ftco-intro .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.ftco-intro .col-md-3,
+.ftco-intro .col-md-6 {
+  padding: 20px;
+  color: #ffffff;
+}
+
+/* Colored Boxes */
+.color-1 {
+  background-color: #2cbcbc;
+}
+
+.color-2 {
+  background-color: #21aac4;
+}
+
+.color-3 {
+  background: linear-gradient(135deg, #2f89fc 0%, #2cbcbc 100%);
+}
+
+/* Icons + Text */
+.ftco-intro h3::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  display: inline-block;
+  color: #21aac4;
+}
+
+.color-1 h3::before {
+  content: "\f095"; /* phone icon */
+}
+
+.color-2 h3::before {
+  content: "\f017"; /* clock icon */
+}
+
+.color-3 h3::before {
+  content: "\f073"; /* calendar icon */
+}
+
+.mb-4{
+  font-size: 20px;
+  /* margin-bottom: 1.5rem !important; */
+}
+
+.phone-number {
+  font-size: 18px;
+  margin-top: 1px;
+}
+
+.openinghours {
+  justify-content: space-around;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Form Styling */
+.appointment-form .form-control {
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: #00c8ff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+.ftco-intro .appointment-form {
+  background: linear-gradient(135deg, #2f89fc 0%, #2cbcbc 100%);
+  padding: 5px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+
+.appointment-form .btn-primary {
+  background: #ffffff !important;
+  color: #007bff !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  padding: 15px 20px;
+  font-weight: bold;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  border: none;
+}
+
+.appointment-form .btn-primary:hover {
+  background-color: #007bff !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+/* Default .btn-primary override */
+.btn-primary {
+  background-color: #00c8ff;
+  border-color: #78d5ef;
+  color: #212529;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .ftco-intro {
+    padding: 30px 40px;
+  }
+
+  .ftco-intro .row {
+    flex-direction: column;
+  }
+
+  .appointment-form .btn-primary {
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .ftco-intro {
+    padding: 20px;
+  }
+
+  .appointment-form .btn-primary {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .ftco-intro .col-md-3,
+  .ftco-intro .col-md-6 {
+    padding: 15px;
+  }
+}
+
+
+
+/* -------- Existing Styles (unaltered) -------- */
+.logo-on-banner {
+  position: absolute;
+  top: 100px; /* Adjust vertically based on your layout */
+  left: 20px;
+}
+
+.logo-on-banner img {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.clinic-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+.clinic-logo {
+  width: 100px;
+  max-width: 30vw;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clinic-logo:hover {
+  transform: scale(1.05);
+}
+
+.appointment-container {
+  background-image: url('/public/images/background.jpg'); /* ensure image is inside /public/images */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto;
+  min-height: 520px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.appointment-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+}
+
+.appointment-form {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.error-text {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submit-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #1d4ed8;
+}
+
+.status-text {
+  text-align: center;
+  color: #16a34a;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* -------- New Styles for Hero & Social Buttons -------- */
+
+.home-slider {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.slider-item {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.slider-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 64, 175, 0.6); /* semi-blue overlay */
+}
+
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.slider-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.slider-text p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-container .btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #facc15;
+  color: #000;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.button-container .btn:hover {
+  background-color: #eab308;
+}
+
+/* -------- Instant Appointment Bar -------- */
+
+.instant-appointment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #e0f2fe;
+  border-bottom: 1px solid #ccc;
+}
+
+.quick-appointment-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.quick-appointment-btn:hover {
+  background-color: #1e40af;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li a {
+  font-size: 1.3rem;
+  color: #1e293b;
+  transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+  color: #2563eb;
+}
+
+.inst-app a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons li a {
+  color: rgb(138, 15, 15);
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+  color: #facc15;
+}
+
+/* -------- Fixed Action Buttons -------- */
+
+.action-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.call-button,
+.whatsapp-button {
+  background-color: #1e40af;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+}
+
+.call-button:hover {
+  background-color: #1d4ed8;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
+
+/* -------- Responsive Design -------- */
+
+@media (max-width: 768px) {
+  .appointment-container {
+    padding: 1rem;
+  }
+
+  .appointment-form {
+    padding: 1rem;
+  }
+
+  .clinic-logo {
+    width: 80px;
+  }
+
+  .appointment-heading {
+    font-size: 1.5rem;
+  }
+
+  .form-control {
+    font-size: 0.95rem;
+  }
+
+  .submit-button {
+    font-size: 0.95rem;
+  }
+
+  .slider-text h1 {
+    font-size: 2rem;
+  }
+
+  .slider-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .clinic-logo {
+    width: 60px;
+  }
+
+  .appointment-heading {
+    font-size: 1.3rem;
+  }
+
+  .submit-button {
+    padding: 0.5rem 1rem;
+  }
+
+  .slider-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .slider-text p {
+    font-size: 0.9rem;
+  }
+
+  .button-container .btn {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

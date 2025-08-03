@@ -1,0 +1,30 @@
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.card-text {
+  font-size: 14px;
+}
+.btn-link {
+  color: #2a5d94;
+  text-decoration: none;
+}
+
+.services-heading {
+  color: #285599; /* Bootstrap primary color or choose your own */
+  font-size: 30px;
+    font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+  letter-spacing: 1px; /* Optional: adds some space between letters */
+}
+
+.services-subtext {
+  color: #555; /* A soft dark gray, you can change this */
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
