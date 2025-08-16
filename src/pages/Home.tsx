@@ -28,6 +28,14 @@ export default function Home() {
 
   return (
     <>
+
+       <Helmet>
+        <title> Best Dental Clinic in Lohegaon Pune | Dr. Dhanshree's Dental Clinic</title>
+        <meta
+          name="description"
+          content="Providing exceptional dental care in Lohegaon, Pune. Book appointments for check-ups, whitening, implants, braces & more."
+        />
+      </Helmet>
       {/* Instant Appointment Bar */}
       <div className="instant-appointment">
         <div className="inst-app">
