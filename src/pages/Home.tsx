@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import "../css/Home.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   useEffect(() => {
