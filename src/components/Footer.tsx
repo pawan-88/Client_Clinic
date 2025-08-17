@@ -104,7 +104,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://www.dhanshreedentalclinic.com"
+                      href="https://drdhanshreedentalclinic.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
