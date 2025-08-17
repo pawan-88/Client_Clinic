@@ -37,7 +37,7 @@ export default function About() {
             <div
               className="col-md-6 ftco-animate about-image"
               style={{
-                backgroundImage: "url('/images/Dr_ImgD.jpg')",
+                backgroundImage: "url('/images/dr.imgd.jpg')",
               }}
             >
               <div className="doctor-overlay">
