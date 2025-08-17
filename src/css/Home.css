@@ -5,6 +5,25 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Fix layout on very small screens (like 393px wide) */
+@media (max-width: 420px) {
+ 
+.quick-appointment-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+  .inst-app {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+    width: 100%;
+  }
+}
+
 /* Section */
 .ftco-intro {
   display: flex;
